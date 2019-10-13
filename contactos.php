@@ -71,7 +71,7 @@ include_once('config/database.php');
             </div>
             <footer class="row bg-primary">
                 <div class="col-md-6 ">
-                    <h6 class="text-white">Developt by Alonso Reyes</h6>
+                    <h6 class="text-white">Developed by Alonso Reyes 2019</h6>
                 </div>
                 <div class="col-md-6 text-right">
                     <nav class="navbar float-right">
