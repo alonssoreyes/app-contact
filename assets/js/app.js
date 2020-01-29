@@ -138,10 +138,13 @@ $(function() {
       }
     });
   }
-
+//Evento click para el boton eliminar con la clase delete-contact
   $(document).on("click", ".delete-contact", function() {
+    //Subir en el DOM hasta el tr
     let elemento = $(this)[0].parentElement.parentElement;
+    //Obtener el valor en el data atribute taskID
     let id = $(elemento).attr("taskID");
+    //Lanzar alerta
     Swal.fire({
       title: "Estas seguro?",
       text: "No podras recuperar el contacto",
@@ -151,7 +154,7 @@ $(function() {
       cancelButtonColor: "#d33",
       confirmButtonText: "Borrar"
     }).then(result => {
-      
+       //Si acepta, enviar peticion Ajax
       if (result.value) {
         $.ajax({
           url: "remover.php",
